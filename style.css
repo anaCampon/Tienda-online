@@ -1,0 +1,357 @@
+/* html5resetcss */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+/* Cabecera de la web */
+
+.contenedor {
+    background-color: rgb(121, 93, 61);
+    display:flex; /* Flexbox para colocar elementos en línea */
+    justify-content: space-between;
+    align-items: center;
+    p {
+        
+        margin-left: 5%;
+        color: white;
+        font-weight: bold;
+    }
+    .iconos {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+
+.cabecera{
+    color:white;
+    display: flex;         
+    justify-content: space-around; 
+    align-items: center;     
+    gap: 10px;              
+    padding: 10px;            
+    p {
+        margin: 0;              
+        flex: 1;                
+        word-wrap: break-word;  
+    }
+    .fa-solid {
+        flex-shrink: 0;         
+    }
+}
+
+
+.desplegable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    i{
+        cursor: pointer;
+    }
+}
+
+hr {
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    & a{
+        display:flex;
+        justify-content: center;
+        color:grey;
+        text-decoration: none;
+        }
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Cuerpo de la web */
+
+
+.fondo {
+    background-position: center;
+    background-color: #d3d3d3;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 1% 20% 3% 20%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pill {
+    width: 70%;
+    height: 400px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    & img {
+        width: 80%;
+        height: 45%;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    & h1{
+        font-size: 16px;
+        margin: 5px 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    & p {
+        margin: 5px;
+        font-size: small;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+
+button {
+    padding: 8px 10px;
+    margin: 10px;
+    width: 90%;
+    text-align: center;
+    background-color: grey;
+    color: whitesmoke;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    bottom: 5px;
+    & h1{
+        font-size: 16px;
+        margin: 5px 0;
+        padding: 5px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    & p {
+        margin: 5px;
+        padding: 5px;
+        font-size: small;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    & .producto {
+        display: flex;
+        width: 100%;
+    }
+    & .producto div {
+        width: 50%;
+        & p{
+            font-size: small;
+        } 
+    }
+    .producto, .producto p, .buttonContainer{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0;
+        #add, #subtract {
+            width: 15%;
+        }
+    }
+    .buttonContainer button {
+        margin: 3px;
+        font-size: x-small;
+        background-color: rgb(121, 93, 61);
+    }
+    .buttonContainer {
+        max-width: 150px;
+    }
+}
+
+
+
+/* Pie de la web */
+
+
+footer {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(40, 40, 58);
+    color: white;
+    font-family: "Roboto", serif;
+    position: fixed;
+    bottom: 0;
+    a{
+        color: white;
+    }
+}
+
+
+/* VERSIÓN ESCRITORIO */
+
+@media screen and (min-width: 768px) {
+
+    /* Cabecera de la web */
+
+.contenedor {
+    display:flex; 
+    justify-content: space-between;
+    gap: 5%;
+    align-items: center;
+    P {
+        margin-left: 15%;
+        color: white;
+        font-weight: bold;
+    }
+    .iconos {
+        margin-right: 15%;
+        display: flex;
+        gap: 15px;
+    }
+}
+
+.desplegable {
+    i{
+        display: none; /*Esconder el botón del menú hamburguesa*/
+        cursor: pointer;
+    }
+}
+
+.navegador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 20px;
+}
+
+
+/* Cuerpo de la web */
+
+.fondo{
+    padding: 1% 20% 3% 20%;
+}
+
+.pill {
+    width: 30%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    & img {
+        width: 80%;
+        height: 45%;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    & h1{
+        padding: 0 10%;
+    }
+    & p {
+        padding: 0 10%;
+    }
+}
+
+button {
+    padding: 8px 10px;
+    margin: 10px;
+    width: 90%;
+    text-align: center;
+    background-color: grey;
+    color: whitesmoke;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart {
+    width: 20%;
+    max-height: fit-content;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.producto, .producto p, .buttonContainer{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    margin: 0;
+}
+.buttonContainer button {
+    margin: 3px;
+    font-size: x-small;
+}
+
+
+
+/* TRANSICIONES Y ANIMACIONES*/
+
+
+button:hover {
+    background-color: rgba(255, 127, 80, 0);
+    color: grey;
+    border: solid 1px;
+    border-color:  grey;
+}
+
+.pill:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+    color: rgb(87, 86, 86);
+}
+
+footer a:hover{
+    color: grey;
+}
+}

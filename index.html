@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda de escalada - Gri-Gri Shop</title>
+        <script defer src="data.js"></script>
+        <script defer src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        </head>
+    <body>
+        <header>
+            <div id="inicio"> 
+            </div>
+            <div class="contenedor">
+                <p> Gri-Gri Shop</p>
+                <div class="iconos"> 
+                    <a target="_blank" href="https://mail.google.com">
+                        <div class="cabecera">
+                            <i class="fa-solid fa-envelope" style="color: white;"></i>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://mail.google.com">
+                        <div class="cabecera">
+                            <i class="fa-solid fa-phone fa-flip-horizontal" style="color: white;"></i>
+                        </div> 
+                    </a>
+                    <a target="_blank">
+                        <div class="cabecera" id ="cart-shopping">
+                            <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://mail.google.com">
+                        <div class="cabecera">
+                            <i class="fa-solid fa-circle-user" style="color: white;"></i>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="navegador">
+                <div class="desplegable">
+                    <i class="fa-solid fa-bars" style="color: #adadad;"></i>
+                </div>
+                <nav>
+                    <a target="_blank" href="index.html"> Inicio </a>
+                    <hr>
+                    <a target="_blank" href="index.html"> Productos </a>
+                    <hr>
+                    <a target="_blank" href="index.html"> Blog </a>
+                    <hr>
+                    <a target="_blank" href="https://mail.google.com"> Contacto </a>
+                </nav>
+            </div>
+           
+        </header>
+        <main class="fondo">
+            <div class="cart hidden">
+                <h1> Carrito de Compras </h1>
+                <p id = 'total'> total: 0 € </p>
+                <div class="productContainer"></div>
+                <button id = 'emptyCart'> Vaciar Carrito </button>
+                <button id = 'buy'> Proceder a comprar </button>
+            </div>
+        </main>
+        <footer>
+            <p> ©2024 -<a href="index.html"> Gri-Gri Shop </a> - <a href="index.html"> Todos los derechos reservados </a> </p>
+        </footer>        
+    </body>
+
+</html>
