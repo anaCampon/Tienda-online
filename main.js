@@ -153,7 +153,7 @@ function showTotal(){
     for (let $producto of $productos) {
         sumaTotal += (productos[$producto.id-1].precio) * productCount[$producto.id] 
     }
-    total.textContent = `total: ${sumaTotal} €`
+    total.textContent = `Total: ${sumaTotal} €`
 }
 
 function emptyCart(){
